@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap');
+
+body{
+  background: linear-gradient(0deg, rgba(57, 57, 58, 0.397), rgba(63, 60, 60, 0.404)), url('img/404647.jpg') ;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+} 
+
+
