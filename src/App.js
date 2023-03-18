@@ -1,13 +1,18 @@
-import Login from './components/Login'
-import BrandExample from './components/BrandExample'
+
+import {Routes, Route } from "react-router-dom"
+import Home from './pages/Home'
+import Login from './pages/Login'
+
 
 
 function App() {
-  return (
-    <div className="App">
-        <BrandExample/>
-        <Login/>
-    </div>
+  return (   
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/login" element={<Login/>}/>
+      </Routes> 
+  
+     
   );
 }
 

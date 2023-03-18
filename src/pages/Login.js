@@ -3,15 +3,17 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
+import BrandExample from '../components/BrandExample'
 
 
 
-function Login() {
+const Login = () =>{
   return (
+
     <div className="Login">
+    <BrandExample/>
       <Container className="d-flex justify-content-center mt-5">
-        
-        
+  
         <Card style={{ width: "35rem" }}>
         <Card.Header>Login</Card.Header>
             <Card.Body >
