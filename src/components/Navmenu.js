@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Logov2 from "./Logov2.png";
 import {LinkContainer} from 'react-router-bootstrap';
 
-function BrandExample() {
+function Navmenu() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container className="container-fluid">
@@ -18,7 +18,7 @@ function BrandExample() {
             height="40"
             className="d-inline-block align-center"
           />
-          {"PROJECT AQUA"}
+          {" PROJECT AQUA "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -26,8 +26,6 @@ function BrandExample() {
             <LinkContainer to="/">
                 <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-
-        
 
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -45,22 +43,15 @@ function BrandExample() {
             <LinkContainer to="/Login">
             <Nav.Link>
               <Button variant="primary" type="submit">
-                Login
+                logout
               </Button>
             </Nav.Link>
             </LinkContainer>
-       
-            <Nav.Link>
-              <Button variant="primary" type="submit">
-                Sign In
-              </Button>
-            </Nav.Link>
-            
-
+      
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
-export default BrandExample;
+export default Navmenu;

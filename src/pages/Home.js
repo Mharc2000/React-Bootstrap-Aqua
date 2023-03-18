@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import BrandExample from '../components/BrandExample'
+import Navmenu from '../components/Navmenu'
 
 
 const Home = () =>{
   return (
 
     <>
-    <BrandExample/>
+    <Navmenu/>
       <Container className="d-flex justify-content-center mt-5">
         
         
