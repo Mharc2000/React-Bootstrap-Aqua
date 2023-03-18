@@ -23,7 +23,7 @@ function Navmenu() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto text-center">
-            <LinkContainer to="/">
+            <LinkContainer to="/Home">
                 <Nav.Link>Home</Nav.Link>
             </LinkContainer>
 
@@ -40,7 +40,7 @@ function Navmenu() {
             </NavDropdown>
           </Nav>
           <Nav className="text-center">
-            <LinkContainer to="/Login">
+            <LinkContainer to="/">
             <Nav.Link>
               <Button variant="primary" type="submit">
                 logout

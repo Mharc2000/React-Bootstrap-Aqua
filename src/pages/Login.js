@@ -45,7 +45,7 @@ const Login = () =>{
                     </Form.Group>
                  
                   
-                    <LinkContainer to="/">
+                    <LinkContainer to="/home">
                     <div className="d-flex">
                         <Button className="flex-grow-1" variant="primary" type="submit" style={{  borderRadius: "13px",}}>
                             Login
