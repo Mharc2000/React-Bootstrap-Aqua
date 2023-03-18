@@ -4,11 +4,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Logov2 from "./Logov2.png";
+import {LinkContainer} from 'react-router-bootstrap';
 
 function BrandExample() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
+      <Container className="container-fluid">
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -22,9 +23,12 @@ function BrandExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto text-center">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/Login">Login</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <LinkContainer to="/">
+                <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+
+        
+
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -38,16 +42,21 @@ function BrandExample() {
             </NavDropdown>
           </Nav>
           <Nav className="text-center">
-            <Nav.Link href="#deets">
+            <LinkContainer to="/Login">
+            <Nav.Link>
               <Button variant="primary" type="submit">
                 Login
               </Button>
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            </LinkContainer>
+       
+            <Nav.Link>
               <Button variant="primary" type="submit">
                 Sign In
               </Button>
             </Nav.Link>
+            
+
           </Nav>
         </Navbar.Collapse>
       </Container>
