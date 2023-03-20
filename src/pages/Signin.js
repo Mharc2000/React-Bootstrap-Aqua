@@ -3,13 +3,13 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import { Anchor } from "react-bootstrap";
+import { Anchor, Row, Col } from "react-bootstrap";
 import {LinkContainer} from 'react-router-bootstrap';
 import Logov2 from "../img/Logov2.png";
 import Navsignin from '../components/Navsignin'
 
 
-const Login = () =>{
+const Signin = () =>{
   return (
 
     <div className="Login">
@@ -33,7 +33,27 @@ const Login = () =>{
 
               </Container>
               
-                <Form className="px-3 py-3 mx-3 my-3 mb-4">
+                <Form className="px-3 py-3 mx-3 my-3">
+                    <Row>
+                      <Col md={6}> 
+                        <Form.Group className="mb-3" controlId="formBasicFisrtName">
+                        <Form.Label>First Name</Form.Label>
+                        <Form.Control  type="text" placeholder="Enter First Name"  style={{  borderRadius: "13px",}} />
+                        </Form.Group>
+
+                      </Col>
+
+                      <Col md={6}>
+                        <Form.Group className="mb-3" controlId="formBasicLastName">
+                        <Form.Label>Last Name</Form.Label>
+                        <Form.Control  type="text" placeholder="Enter Last Name"  style={{  borderRadius: "13px",}} />
+                        </Form.Group>
+                      </Col>
+                    </Row>
+                    
+
+                    
+
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control  type="email" placeholder="Enter email"  style={{  borderRadius: "13px",}} />
@@ -42,29 +62,33 @@ const Login = () =>{
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password"  style={{  marginBottom: "10px", borderRadius: "13px",}} />
-                  
+    
                     </Form.Group>
                  
-                    <div className="d-flex">
-                        <LinkContainer to="/Home">
-                        <Button className="flex-grow-1 mt-3" variant="primary" type="submit" style={{  borderRadius: "13px",}}>
-                            Login
+                  
+         
+                    <div className="d-flex mt-3">
+                        <LinkContainer to="">
+                        <Button className="flex-grow-1" variant="primary" type="submit" style={{  borderRadius: "13px",}}>
+                           Signin
                         </Button>
                         </LinkContainer>
-                    </div>
-                    
-                    <div className="d-flex justify-content-center">
-                      <LinkContainer to="/Forgotpass" style={{  textDecoration: "none"}} >
-                      <Anchor className="mt-2" to="" style={{  textDecoration: "none"}}  > Forgot Password?</Anchor> 
-                      </LinkContainer>
-                      
-                      <LinkContainer to="/Signin" style={{  textDecoration: "none"}} >
-                        <Anchor className="mt-2 mx-2"  > Or Signup</Anchor> 
-                      </LinkContainer>
-                    </div>
-                    
 
+                     
                     
+                    </div>
+
+                    <div className="d-flex mt-2 justify-content-center">
+                      
+              
+                      <LinkContainer to="/" style={{  textDecoration: "none"}} >
+                        <Anchor> Already have Account </Anchor> 
+                      </LinkContainer>
+                    
+                    </div>
+                
+
+                  
                 </Form>
             </Card.Body>
                 
@@ -74,4 +98,4 @@ const Login = () =>{
   );
 }
 
-export default Login;
+export default Signin;

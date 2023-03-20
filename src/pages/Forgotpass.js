@@ -9,7 +9,7 @@ import Logov2 from "../img/Logov2.png";
 import Navsignin from '../components/Navsignin'
 
 
-const Login = () =>{
+const Forgotpass = () =>{
   return (
 
     <div className="Login">
@@ -18,7 +18,7 @@ const Login = () =>{
 
         
   
-        <Card style={{ width: "40rem", borderRadius: "25px" }}>
+        <Card style={{ width: "30rem", borderRadius: "25px", marginTop: "2rem" }}>
          
             <Card.Body>
 
@@ -39,31 +39,14 @@ const Login = () =>{
                     <Form.Control  type="email" placeholder="Enter email"  style={{  borderRadius: "13px",}} />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password"  style={{  marginBottom: "10px", borderRadius: "13px",}} />
-                  
-                    </Form.Group>
-                 
+                    
                     <div className="d-flex">
-                        <LinkContainer to="/Home">
-                        <Button className="flex-grow-1 mt-3" variant="primary" type="submit" style={{  borderRadius: "13px",}}>
-                            Login
+                        <LinkContainer to="">
+                        <Button className="flex-grow-1" variant="primary" type="submit" style={{  borderRadius: "13px",}}>
+                            Send Email Verification
                         </Button>
                         </LinkContainer>
                     </div>
-                    
-                    <div className="d-flex justify-content-center">
-                      <LinkContainer to="/Forgotpass" style={{  textDecoration: "none"}} >
-                      <Anchor className="mt-2" to="" style={{  textDecoration: "none"}}  > Forgot Password?</Anchor> 
-                      </LinkContainer>
-                      
-                      <LinkContainer to="/Signin" style={{  textDecoration: "none"}} >
-                        <Anchor className="mt-2 mx-2"  > Or Signup</Anchor> 
-                      </LinkContainer>
-                    </div>
-                    
-
                     
                 </Form>
             </Card.Body>
@@ -74,4 +57,4 @@ const Login = () =>{
   );
 }
 
-export default Login;
+export default Forgotpass;

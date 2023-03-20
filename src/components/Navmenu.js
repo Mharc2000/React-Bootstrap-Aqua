@@ -8,8 +8,8 @@ import {LinkContainer} from 'react-router-bootstrap';
 
 function Navmenu() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container className="container-fluid">
+    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" >
+      <Container fluid="md" className="container-fluid">
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -22,33 +22,33 @@ function Navmenu() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto text-center">
-            <LinkContainer to="/Home">
-                <Nav.Link>Home</Nav.Link>
-            </LinkContainer>
+          <Nav className="me-auto">
+            
+          </Nav>
+          <Nav className="text-center" >
+              <LinkContainer to="/Home">
+                
+                  <Nav.Link>Home</Nav.Link>
+              </LinkContainer>
 
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
-          <Nav className="text-center">
-            <LinkContainer to="/">
-            <Nav.Link>
-              <Button variant="primary" type="submit">
-                logout
-              </Button>
-            </Nav.Link>
-            </LinkContainer>
-      
-          </Nav>
+         
+               
+          <Nav className="text-center" >
+              <NavDropdown title="John Doe" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Account</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                    Setting
+                </NavDropdown.Item>
+                <LinkContainer to="/">
+                <NavDropdown.Item href="#action/3.3">Logout</NavDropdown.Item>
+                </LinkContainer>
+            
+            
+              </NavDropdown>
+            </Nav>
+          
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
